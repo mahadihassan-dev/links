@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Elsie-Black';
+    src: url('Elsie/Elsie-Black.ttf.woff') format('woff'), url('Elsie/Elsie-Black.ttf.svg#Elsie-Black') format('svg'), url('Elsie/Elsie-Black.ttf.eot'), url('Elsie/Elsie-Black.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}

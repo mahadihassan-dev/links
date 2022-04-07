@@ -1,0 +1,518 @@
+@charset "UTF-8";
+
+/* Theme Core Structure Import */
+
+@import url(core.css);
+
+/* Import Font */
+
+@import url(../font/font.css);
+
+/* Font Family: Poppins , Sans Serif from Google Font CDN */
+
+
+/* 
+    font-family: 'Poppins', sans-serif;
+*/
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+body {
+    font-family: var(--font-poppins) !important;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ====Header Section Start==== */
+
+.header_row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.site_header_wrapper {
+    height: 65px;
+    padding: 10px 0px;
+    background: #fff;
+}
+
+.header_col {
+    width: 50%;
+    height: 100%;
+}
+
+.header_nav_menu {
+    text-align: right;
+}
+
+.site_menu_item_link {
+    display: block;
+    text-decoration: none;
+    font-family: var(--font-poppins);
+    padding: 7px 20px;
+    font-size: 1.25rem;
+    color: #226FB3 !important;
+    font-weight: 600;
+}
+
+.site__logo {
+    text-decoration: none;
+}
+
+.site__logo .site_logo_text span {
+    color: #FFA169;
+}
+
+.site__logo .site_logo_text {
+    font-family: 'Elsie-Black';
+    font-size: 36px;
+    color: #004AAE;
+}
+
+._site_logo {
+    width: 355px;
+    height: 45px;
+}
+
+li.site_menu_item_list {
+    position: relative;
+}
+
+.site_menu_btn {
+    width: 180px;
+    background: #E5EDF3;
+    height: 45px;
+    border-radius: 30px;
+}
+
+li.site_menu_item_list:nth-child(5) {
+    margin-right: 25px;
+}
+
+.site_drop_dropdown_menu {
+    padding: 0;
+    list-style: none;
+}
+
+a.site_drop_dropdown_link {
+    text-decoration: none;
+    padding: 9px;
+    display: block;
+}
+
+.site_drop_dropdown_menu {
+    position: absolute;
+    top: 44px;
+    left: -55px;
+    width: 165px;
+    text-align: center;
+    background: #f2f2f2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+/* ul.site_menu li.site_menu_item_list ul.site_drop_dropdown_menu {
+} */
+
+ul.site_menu li.site_menu_item_list:hover>ul.site_drop_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+li.site_menu_item_list a.site_menu_item_link i {
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+ul.site_menu li.site_menu_item_list:hover>a.site_menu_item_link i {
+    transform: rotate(-180deg);
+}
+
+
+/* ====Header Section End==== */
+
+
+/* ====Banner Section Start==== */
+
+.banner_wrapper {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+.banner_row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.banner_col {
+    width: 50%;
+}
+
+.banner_left_col {
+    position: relative;
+    z-index: 1;
+}
+
+.banner_left_col::after {
+    position: absolute;
+    content: url(../img/map-compressor.png);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .1;
+}
+
+h2.banner_headline {
+    color: #fff;
+    font-size: 56px;
+}
+
+.banner_offer_info {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.banner_offer_date,
+.banner_offer_button {
+    width: 50%;
+}
+
+.banner_offer_date p {
+    margin: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.banner_offer_button {
+    text-align: right;
+}
+
+.banner_offer_btn {
+    display: block;
+    width: 150px;
+    height: 45px;
+    line-height: 43px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background: transparent;
+    margin-left: 265px;
+}
+
+.banner_offer_btn:hover {
+    color: #fff;
+}
+
+.banner_offer_btn i {
+    margin-right: 5px;
+}
+
+.banner_offer_card_body {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner_left_col {
+    position: relative;
+    z-index: 1;
+    padding: 215px 0px;
+}
+
+.banner_right_col_content {
+    padding: 85px 60px;
+}
+
+.banner_offer_card_slider {
+    margin-top: 30px;
+}
+
+.banner_offer_card_body {
+    background: #fff;
+    padding: 50px 60px 50px 75px;
+    border-radius: 10px;
+}
+
+h4.banner_offer_card_title {
+    font-size: 22px;
+    position: relative;
+    color: #53B1F2;
+}
+
+h4.banner_offer_card_title::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    border-bottom: 1px solid #00000029;
+    width: 100%;
+}
+
+
+/* h4.banner_offer_card_title::before {
+    position: absolute;
+    content: '\f3ac';
+    top: 0;
+    left: -28px;
+    font-size: 22px;
+    color: orange;
+    font-family: 'Font Awesome 5 Free';
+} */
+
+h4.banner_offer_card_title i {
+    position: absolute;
+    left: -40px;
+    color: #fcb900;
+    font-size: 26px;
+}
+
+h4.banner_offer_card_title span {
+    background: #283693;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 17px;
+    margin-right: 20px;
+    position: relative;
+}
+
+p.banner_offer_card_detail {
+    margin-top: 40px;
+}
+
+a.banner_offer_card_btn {
+    display: block;
+    width: 175px;
+    height: 50px;
+    line-height: 50px;
+    background: #53B1F2;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+/* ====Banner Section End==== */
+
+
+/* ====Our Service Section Start==== */
+
+.service_section_title h3 {
+    font-size: 56px;
+    font-family: 'Elsie-Black';
+    color: #004AAD;
+}
+
+.service_cards_row {
+    padding: 0px 75px;
+}
+
+.service_card_body {
+    padding: 20px 15px;
+    box-shadow: 0px 3px 10px 1px #00001021;
+    border-radius: 15px;
+    position: relative;
+}
+
+.service_card_body::after {
+    position: absolute;
+    content: '';
+    bottom: 18px;
+    left: 16px;
+    width: 115px;
+    border-bottom: 2px solid #fff;
+}
+
+.service_card_body i {
+    padding: 15px;
+    font-size: 26px;
+    border-radius: 15px;
+}
+
+.service_card_body p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.service_card_body_active {
+    background: #53B1F2 !important;
+}
+
+.service_card_body_active p {
+    color: #fff;
+}
+
+.service_card_body_active i {
+    background-color: #fff;
+    color: #989898;
+}
+
+.serv_content i {
+    background: #c980f954;
+    color: #C980F9;
+}
+
+.serv_link i {
+    background: rgb(227, 248, 251);
+    color: #0693e3;
+}
+
+.serv_web i {
+    background: #ff690010;
+    color: #ff6900;
+}
+
+.serv_social i {
+    color: #C5AB55;
+    background: #C5AB5510;
+}
+
+.serv_dir i {
+    background: #6A75C410;
+    color: #6A75C4;
+}
+
+.serv_google i {
+    color: #E57E50;
+    background: #E57E5010;
+}
+
+.serv_pr i {
+    color: #639FC8;
+    background-color: #639FC810;
+}
+
+.serv_prfl i {
+    color: #ffa500;
+    background: #fcb90010;
+}
+
+.serv_page i {
+    color: #004AAE;
+    background: #004AAE10;
+}
+
+
+/* ====Our Service Section End==== */
+
+
+/* ====Footer Section Start==== */
+
+.footer_signup {
+    background: #00366F;
+}
+
+.footer_signup_text {
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle !important;
+    padding: 10px 0px;
+}
+
+.footer_signup_text h5 {
+    margin-bottom: 0;
+    font-size: 32px;
+}
+
+.footer_signup_btn a {
+    display: block;
+    text-decoration: none;
+    width: 300px;
+    height: 60px;
+    line-height: 59px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.footer_end {
+    background: #19202E;
+}
+
+
+/* ====Footer Section End==== */
