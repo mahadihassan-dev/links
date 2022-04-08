@@ -578,5 +578,39 @@ a.footer_social_link.linkedin {
     background: #3b5998;
 }
 
+.footer_copyright,
+.footer_important_link {
+    height: 100%;
+}
+
+.footer_copyright p,
+.footer_important_link p {
+    font-family: var(--font-open-sans);
+    font-size: 14px;
+}
+
+.footer_copyright_wrapper {
+    background: #19202E;
+}
+
+.footer_copyright_body {
+    position: relative;
+}
+
+.footer_copyright_body::after {
+    position: absolute;
+    content: '';
+    top: -25px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+
+
+/* .footer_copyright p,
+.footer_important_link p {
+    margin-top: 25px !important;
+} */
+
 
 /* ====Footer Section End==== */
