@@ -13,6 +13,10 @@
 
 /* 
     font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Font Awesome 5 Brands';
+    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 5 Pro';
 */
 
 
@@ -22,6 +26,10 @@
 
 :root {
     --font-poppins: 'Poppins', sans-serif;
+    --font-open-sans: 'Roboto', sans-serif;
+    --web-font-brands: 'Font Awesome 5 Brands';
+    --web-font-free: 'Font Awesome 5 Free';
+    --web-font-pro: 'Font Awesome 5 Pro';
 }
 
 ::-moz-selection {
@@ -512,6 +520,62 @@ a.banner_offer_card_btn {
 
 .footer_end {
     background: #19202E;
+}
+
+.footer_links {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.footer_link_item {
+    list-style: none;
+    margin: 2.5px 0px;
+}
+
+.footer_link_item a {
+    position: relative;
+}
+
+.footer_link_item a::after {
+    position: absolute;
+    content: '\f101';
+    font-family: var(--web-font-pro);
+    left: -15px;
+    top: -2px;
+}
+
+.footer_link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #828282;
+    font-family: 'Roboto', sans-serif;
+}
+
+a.footer_social_link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 1px;
+    color: #fff;
+}
+
+a.footer_social_link.facebook {
+    background: #3b5998;
+}
+
+a.footer_social_link.twitter {
+    background: #4099ff;
+}
+
+a.footer_social_link.youtube {
+    background: #d02525;
+}
+
+a.footer_social_link.linkedin {
+    background: #3b5998;
 }
 
 
