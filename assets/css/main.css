@@ -27,6 +27,7 @@
 :root {
     --font-poppins: 'Poppins', sans-serif;
     --font-open-sans: 'Roboto', sans-serif;
+    --font-elsie: 'Elsie-Black';
     --web-font-brands: 'Font Awesome 5 Brands';
     --web-font-free: 'Font Awesome 5 Free';
     --web-font-pro: 'Font Awesome 5 Pro';
@@ -389,8 +390,8 @@ a.banner_offer_card_btn {
 /* ====Our Service Section Start==== */
 
 .service_section_title h3 {
-    font-size: 56px;
     font-family: 'Elsie-Black';
+    font-size: 56px;
     color: #004AAD;
 }
 
@@ -487,6 +488,100 @@ a.banner_offer_card_btn {
 
 
 /* ====Our Service Section End==== */
+
+
+/* ====Our Guest Process Section Start==== */
+
+.guest_process__titile {
+    font-family: var(--font-elsie);
+    font-size: 56px;
+    color: #004AAD;
+}
+
+.process_icon {
+    background: #625BEC;
+    color: #fff;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.process_icon i {
+    font-size: 22px;
+}
+
+.step_2nd,
+.step_4th {
+    margin-top: 95px;
+}
+
+
+/* ====Our Guest Process Section End==== */
+
+
+/* ====Our Client Placement Section Start==== */
+
+.client_place_logo {
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* ====Our Client Placement Section End==== */
+
+
+/* FAQ Section : Start */
+
+
+/* The Code has been inlined */
+
+
+/* FAQ Section : End */
+
+
+/* ==== Perfect Process for Agnecy : Start ==== */
+
+.perfect_agency_step_wrapper_title p {
+    font-family: var(--font-poppins);
+    font-size: 18px !important;
+    font-weight: 400;
+}
+
+.pa_steps_count {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    color: #5ABC7A;
+    border: 4px solid #5ABC7A;
+    font-size: 40px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.pa_title {
+    font-family: var(--font-open-sans);
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pa_info {
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/* ==== Perfect Process for Agnecy : End ==== */
 
 
 /* ====Footer Section Start==== */
