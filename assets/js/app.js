@@ -12,7 +12,7 @@ $(document).ready(function() {
         dots: true,
         arrows: true,
         infinite: true,
-        autoplay: false,
+        autoplay: true,
         prevArrow: '<i class="fal fa-chevron-left banner_slide_btn banner_slide_prev_btn"></i>',
         nextArrow: '<i class="fal fa-chevron-right banner_slide_btn banner_slide_next_btn"></i>',
         speed: 300,

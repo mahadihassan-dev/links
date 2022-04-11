@@ -174,7 +174,7 @@ a.site_drop_dropdown_link {
 
 .site_drop_dropdown_menu {
     position: absolute;
-    top: 44px;
+    top: 55px;
     left: -55px;
     width: 165px;
     text-align: center;
@@ -182,6 +182,7 @@ a.site_drop_dropdown_link {
     opacity: 0;
     visibility: hidden;
     transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-delay: .2s;
 }
 
 
@@ -197,6 +198,7 @@ ul.site_menu li.site_menu_item_list:hover>ul.site_drop_dropdown_menu {
 
 li.site_menu_item_list a.site_menu_item_link i {
     transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-delay: .2s;
 }
 
 ul.site_menu li.site_menu_item_list:hover>a.site_menu_item_link i {
@@ -324,6 +326,7 @@ h2.banner_headline {
     position: absolute;
     top: 115px;
     z-index: 999;
+    cursor: pointer;
 }
 
 .banner_slide_prev_btn {
@@ -402,10 +405,33 @@ a.banner_offer_card_btn {
 
 .banner_offer_card_slider .slick-dots {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
 }
 
 .banner_offer_card_slider .slick-dots li {
     display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.banner_offer_card_slider .slick-dots li button {
+    font-size: 0;
+    border: 2px solid #f3f3f390;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.banner_offer_card_slider .slick-dots li.slick-active button {
+    /* border: 2px solid #f3f3f390; */
+    background: #fff;
 }
 
 
