@@ -315,6 +315,23 @@ h2.banner_headline {
 
 .banner_offer_card_slider {
     margin-top: 30px;
+    position: relative;
+}
+
+.banner_slide_btn {
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    top: 115px;
+    z-index: 999;
+}
+
+.banner_slide_prev_btn {
+    left: -35px;
+}
+
+.banner_slide_next_btn {
+    right: -35px;
 }
 
 .banner_offer_card_body {
@@ -383,6 +400,14 @@ a.banner_offer_card_btn {
     margin-top: 20px;
 }
 
+.banner_offer_card_slider .slick-dots {
+    list-style: none;
+}
+
+.banner_offer_card_slider .slick-dots li {
+    display: inline-block;
+}
+
 
 /* ====Banner Section End==== */
 
@@ -404,6 +429,20 @@ a.banner_offer_card_btn {
     box-shadow: 0px 3px 10px 1px #00001021;
     border-radius: 15px;
     position: relative;
+    transition: all linear .3s;
+}
+
+.service_card_body:hover {
+    background: #0693e3;
+}
+
+.service_card_body:hover i {
+    background: #fff;
+    color: #989898;
+}
+
+.service_card_body:hover p {
+    color: #fff;
 }
 
 .service_card_body::after {
@@ -411,14 +450,20 @@ a.banner_offer_card_btn {
     content: '';
     bottom: 18px;
     left: 16px;
-    width: 115px;
+    width: 0px;
     border-bottom: 2px solid #fff;
+    transition: all linear .3s;
+}
+
+.service_card_body:hover::after {
+    width: 115px;
 }
 
 .service_card_body i {
     padding: 15px;
     font-size: 26px;
     border-radius: 15px;
+    transition: all linear .3s;
 }
 
 .service_card_body p {
@@ -426,6 +471,7 @@ a.banner_offer_card_btn {
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 0;
+    transition: all linear .3s;
 }
 
 .service_card_body_active {
@@ -582,6 +628,80 @@ a.banner_offer_card_btn {
 
 
 /* ==== Perfect Process for Agnecy : End ==== */
+
+
+/* ==== Client Review Section : Start ==== */
+
+.review_slide_wrapper {
+    position: relative;
+    box-shadow: 0px 0px 17px -12px rgb(0 0 0 / 30%);
+    padding: 90px 115px;
+    border-radius: 10px;
+}
+
+.quote_icon {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    font-size: 86px;
+    color: #00000026;
+}
+
+.review_stars {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.review_stars i {
+    /* color: #FDCC0D; */
+    color: #FFDF00;
+}
+
+.review_slide_title {
+    font-size: 36px;
+}
+
+.client_avatar {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+.client_avatar img {
+    border-radius: 50%;
+}
+
+.client_name i {
+    color: #004AAE;
+}
+
+.review_from {
+    display: block;
+    width: 155px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}
+
+.review_client_info {
+    margin-top: 35px;
+}
+
+.client_name {
+    margin-top: 15px !important;
+}
+
+.review_slide_review_text {
+    margin-top: 20px;
+}
+
+.client_company {
+    font-weight: 700;
+}
+
+
+/* ==== Client Review Section : End ==== */
 
 
 /* ====Footer Section Start==== */
