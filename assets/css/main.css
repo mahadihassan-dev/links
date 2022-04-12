@@ -2,7 +2,6 @@
 
 /* Theme Core Structure Import */
 
-@import url(core.css);
 
 /* Import Font */
 
@@ -559,6 +558,168 @@ a.banner_offer_card_btn {
 
 
 /* ====Our Service Section End==== */
+
+
+/* ==== Niche Filter Section Start ==== */
+
+.filter_box_form_body_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 7px;
+    position: relative;
+}
+
+.filter_box_form_body_row::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.filter_form_btn_list .filter_form_sub_btn:nth-child(1) button {
+    border: 0;
+    width: 225px;
+    height: 45px;
+    line-height: 45px;
+    background: #28369395;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.filter_form_btn_list .filter_form_sub_btn button {
+    border: 0;
+    width: 225px;
+    height: 45px;
+    line-height: 45px;
+    background: #283693;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.filter_box_form_body_row .filter_box_field {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.filter_box_field label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.filter_box_field input {
+    margin-bottom: 5px;
+}
+
+.filter_box_field input::placeholder {
+    font-size: 14px;
+}
+
+.filter_box_field select option {
+    font-size: 14px;
+}
+
+.niche__filter {
+    border: 1px solid #00001021;
+    border-radius: 10px;
+}
+
+.niche_filter__function_btn_box_row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.niche_filter_btn_col {
+    width: 33.3%;
+}
+
+.niche_filter_btn_col button {
+    border: 0;
+    width: 225px;
+    height: 55px;
+    font-size: 17px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.niche_filter_btn_col:nth-child(1) {
+    padding: 15px 0px 15px 15px;
+}
+
+.niche_filter_btn_col:nth-child(2) {
+    padding: 15px 0px;
+}
+
+.niche_filter_btn_col:nth-child(3) {
+    padding: 0px 15px 0px 0px;
+}
+
+.niche_filter_btn_col:nth-child(1) button {
+    background: #0693e3;
+    color: #fff;
+    font-family: var(--font-poppins);
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.niche_filter_btn_col:nth-child(2) button {
+    color: #53a0e7;
+    background: #EDF1F4;
+}
+
+.niche_filter_btn_col:nth-child(3) button {
+    width: 80px;
+    height: 80px;
+    background: none;
+}
+
+.page_prev_btn {
+    margin-right: 20px;
+}
+
+.page_next_btn {
+    margin-left: 20px;
+}
+
+.filter_pagination_items .filter_pagination_link {
+    padding: 10px;
+    border-radius: 40px;
+    transition: all linear .3s;
+}
+
+.table_header {
+    background: #e7f2fb !important;
+}
+
+.table_header:hover {
+    background-color: #e7f2fb !important;
+}
+
+.filter_pagination_items .filter_pagination_link:hover,
+.filter_pagination_items:nth-child(1) .filter_pagination_link:hover,
+.filter_pagination_items:nth-child(10) .filter_pagination_link:hover {
+    background: #e7f2fb;
+}
+
+.filter_pagination_items:nth-child(1) .filter_pagination_link {
+    padding: 10px 15px;
+    transition: all linear .3s;
+}
+
+.filter_pagination_items:nth-child(10) .filter_pagination_link {
+    padding: 10px 15px;
+    transition: all linear .3s;
+}
+
+
+/* ==== Niche Filter Section End ==== */
 
 
 /* ====Our Guest Process Section Start==== */

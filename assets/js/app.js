@@ -19,4 +19,8 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
     });
+    // Filter Button
+    $("#filter_toggle_btn").click(function() {
+        $("#filter_box_card").toggle(250);
+    });
 });
