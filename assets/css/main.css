@@ -784,7 +784,7 @@ a.banner_offer_card_btn {
 
 .step_2nd,
 .step_4th {
-    margin-top: 95px;
+    margin-top: 95px !important;
 }
 
 
