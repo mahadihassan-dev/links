@@ -562,6 +562,43 @@ a.banner_offer_card_btn {
 
 /* ==== Niche Filter Section Start ==== */
 
+.FilterHide {
+    display: none;
+}
+
+.blackListURL_field label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.filter_box {
+    transition: all linear .5s;
+}
+
+.blackListURL_field textarea {
+    width: 100%;
+    height: 125px;
+}
+
+.blackListURL_field {
+    padding: 10px 15px;
+}
+
+.blackListUrl_btnList {
+    margin-top: 15px;
+}
+
+.blackListUrl_btn {
+    border: 0;
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    background: #0693E3;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--font-open-sans);
+}
+
 .filter_box_form_body_row {
     display: flex;
     flex-direction: row;

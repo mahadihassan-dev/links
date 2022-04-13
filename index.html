@@ -253,10 +253,10 @@
                         <!-- ../Niche Filter Function Box : Start -->
                         <div class="niche_filter__function_btn_box_row">
                             <div class="niche_filter_btn_col niche_filter__function_btn">
-                                <button id="filter_toggle_btn">Filters <i class="fas fa-sliders-h"></i></button>
+                                <button onclick="FilterToggleButton()" id="filter_toggle_btn">Filters <i class="fas fa-sliders-h"></i></button>
                             </div>
                             <div class="niche_filter_btn_col niche_filter__blacklist_function_btn text-center">
-                                <button>Black list URL <i class="fas fa-ban"></i></button>
+                                <button onclick="blockURLToggleButton()" id="blockURLToggle_Button">Black list URL <i class="fas fa-ban"></i></button>
                             </div>
                             <div class="niche_filter_btn_col niche_filter__moneyback_function_btn text-end">
                                 <button><img src="assets/img/table-badge.png" alt="" class="img-fluid"></button>
@@ -264,7 +264,7 @@
                         </div>
                         <!-- ../Niche Filter Function Box : End -->
                         <!-- ../Filter Box : Start -->
-                        <div id="filter_box_card" class="filter_box" style="display: none;">
+                        <div id="filter_box_card" class="filter_box FilterHide">
                             <form action="" class="filter_box_form_body">
                                 <div class="filter_box_field_body">
                                     <div class="filter_box_form_body_row">
@@ -317,9 +317,17 @@
                         </div>
                         <!-- ../Filter Box : End -->
                         <!-- ../URL Black List : Start -->
-                        <div class="url_black_list_field">
+                        <div id="blockURLListBox" class="url_black_list_field FilterHide">
                             <form action="" class="blackListUrl">
-
+                                <div class="blackListURL_body_row">
+                                    <div class="blackListURL_field text-center">
+                                        <label for="blackListURLS">Paste your blacklist URLs</label>
+                                        <textarea class="form-control bi-textarea bi-textarea-resize" name="blackListUrlTextArea" id="blackListURLS" cols="30" rows="10" placeholder="Paste your blacklist URLs..." required></textarea>
+                                        <ul class="blackListUrl_btnList p-0">
+                                            <li class="blackList_btn_items d-inline-block list-unstyled"><button class="blackListUrl_btn">Submit</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                         <!-- ../URL Black List : End -->
