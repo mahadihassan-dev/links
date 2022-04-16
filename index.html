@@ -282,6 +282,12 @@
                             <div class="niche_filter_btn_col niche_filter__blacklist_function_btn text-center">
                                 <button onclick="blockURLToggleButton()" id="blockURLToggle_Button">Black list URL <i class="fas fa-ban"></i></button>
                             </div>
+                            <div class="niche_filter_btn_col niche_filter__blacklist_function_btn text-center">
+                                <button class="niche__filter_TotalAmount">SELECTED PRICE: <span id="niche__filter_TotalAmount">$0</span></button>
+                            </div>
+                            <div class="niche_filter_btn_col niche_filter__blacklist_function_btn text-center">
+                                <button class="niche__filter_AddToCart_button"><i class="far fa-shopping-cart"></i> Add to Cart</button>
+                            </div>
                             <div class="niche_filter_btn_col niche_filter__moneyback_function_btn text-end">
                                 <button><img src="assets/img/table-badge.png" alt="" class="img-fluid"></button>
                             </div>
@@ -386,8 +392,8 @@
                                         <td>54</td>
                                         <td>55</td>
                                         <td>1846</td>
-                                        <td>100000</td>
-                                        <td><i class="fas fa-dollar-sign"></i> 100</td>
+                                        <td class="text-end">100000</td>
+                                        <td class="text-end"><i class="fas fa-dollar-sign"></i> 100</td>
                                     </tr>
                                     <!-- ../Table Data row -1 : End -->
                                     <!-- ../Table Data row -2 : Start -->
@@ -401,8 +407,8 @@
                                         <td>56</td>
                                         <td>59</td>
                                         <td>1846</td>
-                                        <td>109000</td>
-                                        <td><i class="fas fa-dollar-sign"></i> 100</td>
+                                        <td class="text-end">109000</td>
+                                        <td class="text-end"><i class="fas fa-dollar-sign"></i> 100</td>
                                     </tr>
                                     <!-- ../Table Data row -2 : End -->
                                     <!-- ../Table Data row -3 : Start -->
@@ -416,8 +422,8 @@
                                         <td>54</td>
                                         <td>55</td>
                                         <td>1846</td>
-                                        <td>100000</td>
-                                        <td><i class="fas fa-dollar-sign"></i> 100</td>
+                                        <td class="text-end">100000</td>
+                                        <td class="text-end"><i class="fas fa-dollar-sign"></i> 100</td>
                                     </tr>
                                     <!-- ../Table Data row -3 : End -->
                                     <!-- ../Table Data row -4 : Start -->
@@ -431,8 +437,8 @@
                                         <td>56</td>
                                         <td>59</td>
                                         <td>1846</td>
-                                        <td>109000</td>
-                                        <td><i class="fas fa-dollar-sign"></i> 100</td>
+                                        <td class="text-end">109000</td>
+                                        <td class="text-end"><i class="fas fa-dollar-sign"></i> 100</td>
                                     </tr>
                                     <!-- ../Table Data row -4 : End -->
                                     <!-- ../Table Data row -5 : Start -->
@@ -446,8 +452,8 @@
                                         <td>54</td>
                                         <td>55</td>
                                         <td>1846</td>
-                                        <td>100000</td>
-                                        <td><i class="fas fa-dollar-sign"></i> 100</td>
+                                        <td class="text-end">100000</td>
+                                        <td class="text-end"><i class="fas fa-dollar-sign"></i> 100</td>
                                     </tr>
                                     <!-- ../Table Data row -5 : End -->
                                     <!-- ../Table Data row -6 : Start -->
@@ -461,8 +467,8 @@
                                         <td>54</td>
                                         <td>55</td>
                                         <td>18465</td>
-                                        <td>1000500</td>
-                                        <td><i class="fas fa-dollar-sign"></i> 100</td>
+                                        <td class="text-end">1000500</td>
+                                        <td class="text-end"><i class="fas fa-dollar-sign"></i> 100</td>
                                     </tr>
                                     <!-- ../Table Data row -6 : End -->
                                     <!-- ../Table Data row -7 : Start -->
@@ -476,8 +482,8 @@
                                         <td>54</td>
                                         <td>55</td>
                                         <td>18456</td>
-                                        <td>1050000</td>
-                                        <td><i class="fas fa-dollar-sign"></i> 100</td>
+                                        <td class="text-end">1050000</td>
+                                        <td class="text-end"><i class="fas fa-dollar-sign"></i> 100</td>
                                     </tr>
                                     <!-- ../Table Data row -7 : End -->
                                     <!-- ../Table Data row -8 : Start -->
@@ -491,8 +497,8 @@
                                         <td>54</td>
                                         <td>55</td>
                                         <td>1846</td>
-                                        <td>1100000</td>
-                                        <td><i class="fas fa-dollar-sign"></i> 100</td>
+                                        <td class="text-end">1100000</td>
+                                        <td class="text-end"><i class="fas fa-dollar-sign"></i> 100</td>
                                     </tr>
                                     <!-- ../Table Data row -8 : End -->
                                 </tbody>
@@ -1115,7 +1121,9 @@
                 <div class="row">
                     <div class="col-4">
                         <div class="footer_company_shortinfo">
-                            <img src="assets/img/footer_stroke_logo.png" alt="" class="img-fluid">
+                            <a href="#">
+                                <img src="assets/img/footer_stroke_logo.png" alt="" class="img-fluid">
+                            </a>
                             <div class="footer_social_media">
                                 <ul class="footer_social_media_list p-0 m-0">
                                     <li class="footer_social_items d-inline-block"><a href="#" class="footer_social_link facebook"><i class="fab fa-facebook-f"></i></a></li>
