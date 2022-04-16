@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Slick Slider -->
     <link rel="stylesheet" href="assets/plugins/slick-1.8.1/slick.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="assets/plugins/animate.css/animate.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.15.4-web/css/fontawesome.min.css">
     <!-- Bootstrap Icons -->
@@ -51,8 +53,8 @@
                 <div class="header_col header_col_left header_logo">
                     <div class="site_logo">
                         <a href="#" class="site__logo">
-                            <!-- <img src="assets/img/logo.png" alt="site logo; site main logo" class="img-fluid _site_logo"> -->
-                            <span class="site_logo_text">backilnking<span>.</span>biz</span>
+                            <img src="assets/img/header_logo.png" alt="site logo; site main logo" class="img-fluid _site_logo">
+                            <!-- <span class="site_logo_text">backilnking<span>.</span>biz</span> -->
                         </a>
                     </div>
                 </div>
@@ -106,6 +108,7 @@
                     <div class="banner_col banner_left_col">
                         <div class="banner_left_col_content">
                             <h2 class="banner_headline">We Build Links for your ...... <br> Niche</h2>
+                            <a href="#" class="banner_offer_btn"><i class="fas fa-ticket-alt"></i> All Offer</a>
                         </div>
                     </div>
                     <!-- .../Banner Left Col: End -->
@@ -113,41 +116,62 @@
                     <div class="banner_col banner_right_col">
                         <div class="banner_right_col_content">
                             <!-- ..../Banner All Offer Short Info: Start -->
-                            <div class="banner_offer_info">
+                            <!-- <div class="banner_offer_info">
                                 <div class="banner_offer_date">
                                     <p>March 2022 Offers</p>
                                 </div>
                                 <div class="banner_offer_button">
                                     <a href="#" class="banner_offer_btn"><i class="fas fa-ticket-alt"></i> All Offer</a>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- ..../Banner All Offer Short Info: End -->
                             <!-- ..../Banner All Offer Card Slider: Start -->
                             <div class="banner_offer_card_slider">
                                 <!-- ...../Banner Slide - 1 : Start -->
                                 <div class="banner_offer_card_slide">
                                     <div class="banner_offer_card_body">
-                                        <h4 class="banner_offer_card_title"><i class="fad fa-fire"></i><span>BOGOF BLOGS</span> Get twice as much Content this March!</h4>
+                                        <h4 class="banner_offer_card_title"><i class="fad fa-fire"></i><span>Today's</span> Get twice as much Content this March!</h4>
                                         <p class="banner_offer_card_detail">Do you want to engage your target audience give your SEO Some Attention? Boost your Blog Today. <b>Slide -1</b> </p>
-                                        <a href="#" class="banner_offer_card_btn">CLAIM OFFER!</a>
+                                        <ul class="offer_btns m-0 p-0">
+                                            <li class="d-inline-block">
+                                                <a href="#" class="banner_offer_card_btn">CLAIM OFFER!</a>
+                                            </li>
+                                            <li class="d-inline-block">
+                                                <a href="#" class="banner_offer_card_btn">View Offer</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <!-- ...../Banner Slide - 1 : End -->
                                 <!-- ...../Banner Slide - 2 : Start -->
                                 <div class="banner_offer_card_slide">
                                     <div class="banner_offer_card_body">
-                                        <h4 class="banner_offer_card_title"><i class="fad fa-fire"></i><span>BOGOF BLOGS</span> Get twice as much Content this March!</h4>
+                                        <h4 class="banner_offer_card_title"><i class="fad fa-fire"></i><span>Today's</span> Get twice as much Content this March!</h4>
                                         <p class="banner_offer_card_detail">Do you want to engage your target audience give your SEO Some Attention? Boost your Blog Today. <b>Slide -2 </b></p>
-                                        <a href="#" class="banner_offer_card_btn">CLAIM OFFER!</a>
+                                        <ul class="offer_btns m-0 p-0">
+                                            <li class="d-inline-block">
+                                                <a href="#" class="banner_offer_card_btn">CLAIM OFFER!</a>
+                                            </li>
+                                            <li class="d-inline-block">
+                                                <a href="#" class="banner_offer_card_btn">View Offer</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <!-- ...../Banner Slide - 2 : End -->
                                 <!-- ...../Banner Slide - 3 : Start -->
                                 <div class="banner_offer_card_slide">
                                     <div class="banner_offer_card_body">
-                                        <h4 class="banner_offer_card_title"><i class="fad fa-fire"></i><span>BOGOF BLOGS</span> Get twice as much Content this March!</h4>
+                                        <h4 class="banner_offer_card_title"><i class="fad fa-fire"></i><span>Today's</span> Get twice as much Content this March!</h4>
                                         <p class="banner_offer_card_detail">Do you want to engage your target audience give your SEO Some Attention? Boost your Blog Today. <b>Slide -3</b></p>
-                                        <a href="#" class="banner_offer_card_btn">CLAIM OFFER!</a>
+                                        <ul class="offer_btns m-0 p-0">
+                                            <li class="d-inline-block">
+                                                <a href="#" class="banner_offer_card_btn">CLAIM OFFER!</a>
+                                            </li>
+                                            <li class="d-inline-block">
+                                                <a href="#" class="banner_offer_card_btn">View Offer</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <!-- ...../Banner Slide - 3 : End -->
@@ -338,6 +362,9 @@
                                 <tbody class="filter_table">
                                     <!-- ../Domain Info Filter Table : Start -->
                                     <tr class="table_header">
+                                        <th>
+                                            <input type="checkbox" class="disabled">
+                                        </th>
                                         <th>Site ID &nbsp;<i class="fas fa-sort"></i></th>
                                         <th>Site Category &nbsp;<i class="fas fa-sort"></i></th>
                                         <th>TLD &nbsp;<i class="fas fa-sort"></i></th>
@@ -350,6 +377,9 @@
                                     <!-- ../Domain Info Filter Table : End -->
                                     <!-- ../Table Data row -1 : Start -->
                                     <tr>
+                                        <td>
+                                            <input type="checkbox" name="" id="">
+                                        </td>
                                         <td>1</td>
                                         <td>Soccer</td>
                                         <td>com</td>
@@ -362,6 +392,9 @@
                                     <!-- ../Table Data row -1 : End -->
                                     <!-- ../Table Data row -2 : Start -->
                                     <tr>
+                                        <td>
+                                            <input type="checkbox" name="" id="">
+                                        </td>
                                         <td>2</td>
                                         <td>General</td>
                                         <td>com</td>
@@ -374,6 +407,9 @@
                                     <!-- ../Table Data row -2 : End -->
                                     <!-- ../Table Data row -3 : Start -->
                                     <tr>
+                                        <td>
+                                            <input type="checkbox" name="" id="">
+                                        </td>
                                         <td>3</td>
                                         <td>Soccer</td>
                                         <td>com</td>
@@ -386,6 +422,9 @@
                                     <!-- ../Table Data row -3 : End -->
                                     <!-- ../Table Data row -4 : Start -->
                                     <tr>
+                                        <td>
+                                            <input type="checkbox" name="" id="">
+                                        </td>
                                         <td>4</td>
                                         <td>General</td>
                                         <td>com</td>
@@ -398,6 +437,9 @@
                                     <!-- ../Table Data row -4 : End -->
                                     <!-- ../Table Data row -5 : Start -->
                                     <tr>
+                                        <td>
+                                            <input type="checkbox" name="" id="">
+                                        </td>
                                         <td>5</td>
                                         <td>Soccer</td>
                                         <td>com</td>
@@ -410,6 +452,9 @@
                                     <!-- ../Table Data row -5 : End -->
                                     <!-- ../Table Data row -6 : Start -->
                                     <tr>
+                                        <td>
+                                            <input type="checkbox" name="" id="">
+                                        </td>
                                         <td>6</td>
                                         <td>Soccer</td>
                                         <td>com</td>
@@ -422,6 +467,9 @@
                                     <!-- ../Table Data row -6 : End -->
                                     <!-- ../Table Data row -7 : Start -->
                                     <tr>
+                                        <td>
+                                            <input type="checkbox" name="" id="">
+                                        </td>
                                         <td>7</td>
                                         <td>Soccer</td>
                                         <td>com</td>
@@ -434,6 +482,9 @@
                                     <!-- ../Table Data row -7 : End -->
                                     <!-- ../Table Data row -8 : Start -->
                                     <tr>
+                                        <td>
+                                            <input type="checkbox" name="" id="">
+                                        </td>
                                         <td>8</td>
                                         <td>Soccer</td>
                                         <td>com</td>
@@ -503,7 +554,7 @@
                         </div>
                         <!-- ../guest Process card col - 1 : End -->
                         <!-- ../guest Process card col - 2 : Start -->
-                        <div class="col step_2nd">
+                        <div class="col">
                             <div class="guest_process_card">
                                 <div class="row">
                                     <div class="col-md-2">
@@ -547,7 +598,7 @@
                         </div>
                         <!-- ../guest Process card col - 3 : End -->
                         <!-- ../guest Process card col - 4 : Start -->
-                        <div class="col step_4th">
+                        <div class="col">
                             <div class="guest_process_card">
                                 <div class="row">
                                     <div class="col-md-2">
@@ -1055,23 +1106,53 @@
                         </div>
                     </div>
                 </div>
-                <!-- ./Social Media row : Start -->
-                <div class="row mt-4">
+            </div>
+        </div>
+        <!-- ./Footer Link Column: End -->
+        <!-- ./Footer Company Info : Start -->
+        <div class="footer_company_info py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="footer_company_shortinfo">
+                            <img src="assets/img/footer_stroke_logo.png" alt="" class="img-fluid">
+                            <div class="footer_social_media">
+                                <ul class="footer_social_media_list p-0 m-0">
+                                    <li class="footer_social_items d-inline-block"><a href="#" class="footer_social_link facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="footer_social_items d-inline-block"><a href="#" class="footer_social_link twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="footer_social_items d-inline-block"><a href="#" class="footer_social_link youtube"><i class="fab fa-youtube"></i></a></li>
+                                    <li class="footer_social_items d-inline-block"><a href="#" class="footer_social_link linkedin"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="footer_company_shprtInformation">
+                            <p class="text-white-50 m-0"><b>Desclaimer: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quas consectetur eius quibusdam, ea optio earum maiores nemo ratione magni dolorum in ducimus dignissimos voluptatum fugiat culpa reiciendis
+                                nulla tenetur amet quasi voluptas? Perferendis, magnam odio maxime recusandae sapiente numquam et! Debitis quaerat id nulla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./Footer Company Info : End -->
+        <!-- ./Footer important Link : Start -->
+        <div class="footer_privacy_link_wrapper mt-4 mb-4">
+            <div class="container">
+                <div class="row">
                     <div class="col-12">
-                        <div class="footer_social_media">
-                            <ul class="footer_social_media_list p-0 m-0">
-                                <li class="footer_social_items d-inline-block"><a href="#" class="footer_social_link facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="footer_social_items d-inline-block"><a href="#" class="footer_social_link twitter"><i class="fab fa-twitter"></i></a></li>
-                                <li class="footer_social_items d-inline-block"><a href="#" class="footer_social_link youtube"><i class="fab fa-youtube"></i></a></li>
-                                <li class="footer_social_items d-inline-block"><a href="#" class="footer_social_link linkedin"><i class="fab fa-linkedin"></i></a></li>
+                        <div class="footer_privacyLink text-center">
+                            <ul class="footer_privacyLink_list">
+                                <li class="footer_privacyLink_item d-inline-block px-3"><a href="#" class="footer_privacy-Link text-white-50 text-decoration-none">Privacy and Policy</a></li>
+                                <li class="footer_privacyLink_item d-inline-block px-3"><a href="#" class="footer_privacy-Link text-white-50 text-decoration-none">Cookies Policy and settings</a></li>
+                                <li class="footer_privacyLink_item d-inline-block px-3"><a href="#" class="footer_privacy-Link text-white-50 text-decoration-none">Terms and Conditions</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <!-- ./Social Media row : End -->
             </div>
         </div>
-        <!-- ./Footer Link Column: End -->
+        <!-- ./Footer important Link : End -->
         <!-- ./Footer Copyright and Important Link : Start -->
         <div class="footer_copyright_wrapper">
             <div class="container">
@@ -1084,13 +1165,13 @@
                             </div>
                         </div>
                         <!-- ../Footer Copyright : End -->
-                        <!-- ../Footer Important : Start -->
+                        <!-- ../Footer Designed and Developed by : Start -->
                         <div class="col-6">
                             <div class="footer_important_link text-end">
-                                <p class="text-white m-0">Please visit Our <a href="#" class="link-primary">Privacy & Cookies Policy</a> and <a href="#" class="link-primary">Terms</a></p>.
+                                <p class="text-white m-0">Designed and Developed By <a href="#" class="text-decoration-none link-primary">Backlinking.biz</a></p>.
                             </div>
                         </div>
-                        <!-- ../Footer Important : End -->
+                        <!-- ../Footer Designed and Developed by : End -->
                     </div>
                 </div>
             </div>
