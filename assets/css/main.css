@@ -489,6 +489,7 @@ a.banner_offer_card_btn {
 
 .service_card_body:hover {
     background: #0693e3;
+    transform: translateY(-5px);
 }
 
 .service_card_body:hover i {
@@ -791,6 +792,51 @@ a.banner_offer_card_btn {
 
 .table_header {
     background: #e7f2fb !important;
+}
+
+tr.table_header th:nth-child(1) {
+    text-align: center;
+}
+
+tr.table_header th:nth-child(3) {
+    width: 555px;
+}
+
+tr.table_header th:nth-child(1) input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    padding: 57px;
+    cursor: no-drop;
+}
+
+tr.table_header th:nth-child(2) {
+    width: 86px;
+}
+
+tr td:nth-child(1) {
+    text-align: center;
+}
+
+tr td:nth-child(4) {
+    color: #0693e3 !important;
+}
+
+tr td:nth-child(1) input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    padding: 57px;
+}
+
+.SelectedKwFiled_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    width: 100%;
+}
+
+.SelectedKwFiled_box input:nth-child(2) {
+    margin-left: 10px;
 }
 
 .table_header th:nth-child(8) {
