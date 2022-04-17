@@ -48,7 +48,7 @@
     <header id="site_header" class="site_header_wrapper">
         <div class="container-fluid">
             <!-- Header Row: Start -->
-            <div class="header_row">
+            <div class="header_row desktop_version">
                 <!-- Site Logo: Start -->
                 <div class="header_col header_col_left header_logo">
                     <div class="site_logo">
@@ -62,6 +62,7 @@
                 <!-- Site Navigation Menu: Start -->
                 <div class="header_col header_col_right header_nav_menu">
                     <div class="site_nav">
+                        <!-- .../Header For Desktop and Laptop : Start -->
                         <ul class="site_menu m-0 p-0">
                             <li class="site_menu_item_list d-inline-block site_drop_dropdown">
                                 <a href="#" class="site_menu_item_link ">Products <i class="fas fa-caret-down"></i></a>
@@ -88,11 +89,56 @@
                                 <a href="#" class="site_menu_item_link site_menu_btn">Signup/Login</a>
                             </li>
                         </ul>
+                        <!-- .../Header For Desktop and Laptop : End -->
                     </div>
                 </div>
                 <!-- Site Navigation Menu: End -->
             </div>
             <!-- Header Row: Start -->
+            <!-- ../Mobile Version Header : Start -->
+            <div class="header_mobile_ver_nav">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/img/header_logo.png" alt="" class="header_mobile_logo img-fluid">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Disabled</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- ../Mobile Version Header : End -->
         </div>
     </header>
     <!-- ===Header Section End=== -->
@@ -431,7 +477,7 @@
                                         <td class="text-center">55</td>
                                         <td class="text-center">1846</td>
                                         <td class="text-center">100000</td>
-                                        <td><i class="fas fa-dollar-sign"></i> 100</td> Mohan
+                                        <td><i class="fas fa-dollar-sign"></i> 100</td>
                                     </tr>
                                     <!-- ../Table Data row -3 : End -->
                                     <!-- ../Table Data row -4 : Start -->
@@ -562,6 +608,7 @@
                                             <span class="guest_post_step">Step 1</span>
                                             <h4 class="guest_post_process__title">Place Order</h4>
                                             <p class="guest_post_process__detail">Fill out our simple form specifying your desired site niche, the links you want included, and anything else we should know before writing.</p>
+                                            <span class="guest_post_step_num">01</span>
                                         </div>
                                     </div>
                                 </div>
@@ -584,6 +631,7 @@
                                             <span class="guest_post_step">Step 2</span>
                                             <h4 class="guest_post_process__title">Out Reach</h4>
                                             <p class="guest_post_process__detail">Fill out our simple form specifying your desired site niche, the links you want included, and anything else we should know before writing.</p>
+                                            <span class="guest_post_step_num">02</span>
                                         </div>
                                     </div>
                                 </div>
@@ -606,6 +654,7 @@
                                             <span class="guest_post_step">Step 3</span>
                                             <h4 class="guest_post_process__title">Content Writting</h4>
                                             <p class="guest_post_process__detail">Fill out our simple form specifying your desired site niche, the links you want included, and anything else we should know before writing.</p>
+                                            <span class="guest_post_step_num">03</span>
                                         </div>
                                     </div>
                                 </div>
@@ -628,6 +677,7 @@
                                             <span class="guest_post_step">Step 4</span>
                                             <h4 class="guest_post_process__title">Submmission</h4>
                                             <p class="guest_post_process__detail">Fill out our simple form specifying your desired site niche, the links you want included, and anything else we should know before writing.</p>
+                                            <span class="guest_post_step_num">04</span>
                                         </div>
                                     </div>
                                 </div>
@@ -650,6 +700,7 @@
                                             <span class="guest_post_step">Step 5</span>
                                             <h4 class="guest_post_process__title">Reporting</h4>
                                             <p class="guest_post_process__detail">Fill out our simple form specifying your desired site niche, the links you want included, and anything else we should know before writing.</p>
+                                            <span class="guest_post_step_num">05</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1038,12 +1089,12 @@
         <div class="footer_signup py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-sm-12 col-lg-7">
                         <div class="footer_signup_text text-end">
                             <h5 class="text-white">Join 10,000+ Marketing Agengies & Teams</h5>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-sm-12 col-lg-5">
                         <div class="footer_signup_btn">
                             <a href="#" class="text-white">Create your Dashboard</a>
                         </div>
@@ -1057,7 +1108,7 @@
             <div class="container">
                 <div class="row">
                     <!-- ../Footer Link Col - 1: Start -->
-                    <div class="col-3">
+                    <div class="col-lg-3 justify-content-sm-center">
                         <div class="footer_link_body">
                             <h6 class="footer_col_title text-white text-uppercase">Services</h6>
                             <ul class="footer_links">
@@ -1069,7 +1120,7 @@
                         </div>
                     </div>
                     <!-- ../Footer Link Col - 2: Start -->
-                    <div class="col-3">
+                    <div class="col-lg-3 justify-content-sm-center">
                         <div class="footer_link_body">
                             <h6 class="footer_col_title text-white text-uppercase">Company</h6>
                             <ul class="footer_links">
@@ -1086,7 +1137,7 @@
                         </div>
                     </div>
                     <!-- ../Footer Link Col - 3: Start -->
-                    <div class="col-3">
+                    <div class="col-lg-3 justify-content-sm-center">
                         <div class="footer_link_body">
                             <h6 class="footer_col_title text-white text-uppercase">Resources</h6>
                             <ul class="footer_links">
@@ -1102,7 +1153,7 @@
                         </div>
                     </div>
                     <!-- ../Footer Link Col - 4: Start -->
-                    <div class="col-3">
+                    <div class="col-lg-3 justify-content-sm-center">
                         <div class="footer_link_body">
                             <h6 class="footer_col_title text-white text-uppercase">Contact us</h6>
                             <ul class="footer_links">

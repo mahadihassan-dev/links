@@ -92,6 +92,10 @@ textarea {
 
 /* ====Header Section Start==== */
 
+.header_mobile_ver_nav {
+    display: none;
+}
+
 .header_row {
     display: flex;
     width: 100%;
@@ -893,6 +897,28 @@ tr td:nth-child(1) input[type=checkbox] {
 .step_2nd,
 .step_4th {
     margin-top: 95px !important;
+}
+
+.guest_process_info {
+    position: relative;
+}
+
+.guest_post_step_num {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    font-size: 76px;
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #004AAD15;
+    transition: all linear .3s;
+}
+
+.guest_process_card:hover .col-md-10 .guest_process_info .guest_post_step_num {
+    transform: translateY(-5px);
+    -webkit-text-stroke-color: #004AAD;
 }
 
 
