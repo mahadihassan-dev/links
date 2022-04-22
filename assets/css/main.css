@@ -7,6 +7,10 @@
 
 @import url(../font/font.css);
 
+/* Pages CSS Imported */
+
+@import url(pages.css);
+
 /* Font Family: Poppins , Sans Serif from Google Font CDN */
 
 
@@ -16,6 +20,13 @@
     font-family: 'Font Awesome 5 Brands';
     font-family: 'Font Awesome 5 Free';
     font-family: 'Font Awesome 5 Pro';
+    font-family: 'Abril-Fatface';
+    font-family: 'Elsie-Black';
+    font-family: 'Elsie-Swash-Caps-Regular';
+    font-family: 'CaslonTwoBlackSSK';
+    font-family: 'NK123';
+    font-family: 'OPTIArtCraft-Bold';
+    font-family: 'OPTIwtcGoudy-Bold';
 */
 
 
@@ -831,7 +842,7 @@ tr td:nth-child(1) input[type=checkbox] {
     padding: 57px;
 }
 
-.SelectedKwFiled_box {
+.SelectedKwField_box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -839,7 +850,7 @@ tr td:nth-child(1) input[type=checkbox] {
     width: 100%;
 }
 
-.SelectedKwFiled_box input:nth-child(2) {
+.SelectedKwField_box input:nth-child(2) {
     margin-left: 10px;
 }
 

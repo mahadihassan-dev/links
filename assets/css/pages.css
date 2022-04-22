@@ -1,0 +1,39 @@
+/* ==== Page Breadcrumb Section : Start ==== */
+
+.breadcrumb_wrapper {
+    background: #302B62;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.breadcrumb_link_item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.breadcrumb_link_item:nth-child(1) {
+    margin-left: 0px;
+}
+
+.breadcrumb_link_item:nth-child(3) {
+    margin-right: 0;
+}
+
+.breadcrumb_link {
+    color: #fff;
+}
+
+
+/* ==== Page Breadcrumb Section : End ==== */
+
+
+/* ==== About Page : Start ==== */
+
+
+/* ==== About Page : End ==== */
+
+
+/* ==== All Offer Page : Start ==== */
+
+
+/* ==== All Offer Page : End ==== */

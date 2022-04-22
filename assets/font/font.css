@@ -1,6 +1,7 @@
-@font-face {
-    font-family: 'Elsie-Black';
-    src: url('Elsie/Elsie-Black.ttf.woff') format('woff'), url('Elsie/Elsie-Black.ttf.svg#Elsie-Black') format('svg'), url('Elsie/Elsie-Black.ttf.eot'), url('Elsie/Elsie-Black.ttf.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(Elsie/Elsie-Black.css);
+@import url(Abril-Fatface/abril-font.css);
+@import url(CaslonTwoBlackSSK/caslon-font.css);
+@import url(Elsie-Swash-Caps-Regular/elsie-swap-regular-font.css);
+@import url(NK123/nk123-font.css);
+@import url(OPTIArtCraft-Bold/opti-art-font.css);
+@import url(OPTIwtcGoudy/opti-wtc-goudy-font.css);
