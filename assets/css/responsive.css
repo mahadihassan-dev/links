@@ -2,9 +2,9 @@
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     /* Root CSS Start */
-    body {
-        /* overflow-x: hidden; */
-    }
+    /* body {
+        overflow-x: hidden;
+    } */
     /* Root CSS End */
     /* Header Section Start */
     .header_mobile_ver_nav {
@@ -59,25 +59,179 @@
         margin-left: 0px;
     }
     a.banner_offer_card_btn {
-        width: 128px;
+        width: 100%;
         font-size: 14px;
         margin-top: 10px;
+    }
+    .offer_btns {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .offer_btn {
+        width: 50% !important;
+    }
+    .offer_btns .offer_btn:nth-child(2) {
+        margin-left: 5px;
     }
     .banner_slide_btn {
         top: 130px;
     }
+    .banner_left_col {
+        position: relative;
+        z-index: 1;
+        padding: 75px 0px;
+    }
+    .banner_left_col::after {
+        top: 105px;
+        left: -80%;
+    }
     /* Banner Section Start */
     /* Service Section Start */
-    .service_section_title h3 {
+    .service_section_title h3,
+    .guest_process__titile {
         font-size: 32px;
     }
     .service_cards_row {
         padding: 0px 42px;
     }
+    .service_cards_row .row .col {
+        margin-top: 25px;
+    }
+    .service_cards_row .row .col:nth-child(1) {
+        margin-top: 0px;
+    }
+    .service_cards_row .row .col:nth-child(2) {
+        margin-top: 0px;
+    }
+    .service_card_body p {
+        /* font-size: 15px; */
+        font-size: 75%;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 0;
+        transition: all linear .3s;
+    }
     /* Service Section End */
+    /* Filter Section Start */
+    .filter_form_btn_list .filter_form_sub_btn:nth-child(1) button {
+        border: 0;
+        width: 135px;
+        height: 45px;
+        line-height: 45px;
+        background: #28369395;
+        color: #fff;
+        border-radius: 30px;
+    }
+    .filter_form_btn_list .filter_form_sub_btn button {
+        border: 0;
+        width: 135px;
+        height: 45px;
+        line-height: 45px;
+        background: #283693;
+        color: #fff;
+        border-radius: 30px;
+    }
+    .filter_box_form_body_row {
+        flex-direction: column;
+    }
+    .filter_box_form_body_row .filter_box_field:nth-child(2) select {
+        width: 100%;
+    }
+    .niche_filter__function_btn_box_row {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0px 10px 0px 10px;
+    }
+    .niche_filter_btn_col {
+        width: 33.33%;
+    }
+    .niche_filter_btn_col:nth-child(1) {
+        padding: 15px 0px 15px 0px;
+    }
+    .niche_filter_btn_col:nth-child(2) {
+        padding: 15px 0px;
+        display: none;
+    }
+    .niche_filter_btn_col:nth-child(5) {
+        padding: 0px 15px 0px 0px;
+        display: none;
+    }
+    .niche_filter_btn_col button {
+        width: 100%;
+        font-size: 12px;
+    }
+    .table_header {
+        background: #e7f2fb !important;
+        display: none;
+    }
+    .filter_table_data {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        text-align: center;
+    }
+    tr.filter_table_data td:nth-child(2) {
+        display: none;
+    }
+    /* Filter Section End */
+    /* Review Section Start */
+    .review_slide_wrapper {
+        position: relative;
+        box-shadow: 0px 0px 17px -12px rgb(0 0 0 / 30%);
+        padding: 50px 10px;
+        border-radius: 10px;
+    }
+    .review_slide_title {
+        font-size: 22px;
+    }
+    .quote_icon {
+        position: absolute;
+        top: 10px;
+        left: 35px;
+        font-size: 86px;
+        color: #00000008;
+    }
+    /* Review Section End */
     /* Footer Section Start */
+    .footer_signup_text h5 {
+        margin-bottom: 0;
+        font-size: 22px;
+        text-align: left;
+    }
+    .footer_signup_btn a {
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        height: 50px;
+        line-height: 49px;
+        text-align: center;
+        background: transparent;
+        border: 1px solid #fff;
+        font-size: 14px;
+    }
     .footer_link_body {
         padding-left: 20px;
+    }
+    a.footer_privacy-Link {
+        font-size: 10px;
+    }
+    .footer_privacyLink_item {
+        margin-right: 5px;
+    }
+    .footer_copyright p,
+    .footer_important_link p {
+        font-family: var(--font-open-sans);
+        font-size: 10px;
+    }
+    .footer_company_shprtInformation {
+        margin-top: 10px;
+    }
+    .footer_company_shprtInformation p {
+        font-size: 12px;
     }
     /* Footer Section End */
 }

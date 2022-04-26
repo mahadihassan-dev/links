@@ -120,6 +120,7 @@ textarea {
     height: 65px;
     padding: 10px 0px;
     background: #fff;
+    box-shadow: 0px 0px 16px -8px rgb(0 0 0 / 30%);
 }
 
 .header_col {
@@ -315,8 +316,17 @@ h2.banner_headline {
     text-align: right;
 }
 
-.offer_btns li:nth-child(2) {
-    margin-left: 50px;
+.offer_btns {
+    display: flex;
+    width: 100%;
+}
+
+.offer_btns .offer_btn {
+    width: 50%;
+}
+
+.offer_btns .offer_btn:nth-child(2) {
+    margin-left: 30px;
 }
 
 .banner_offer_btn {
@@ -435,7 +445,8 @@ p.banner_offer_card_detail {
 
 a.banner_offer_card_btn {
     display: block;
-    width: 175px;
+    /* width: 175px; */
+    width: 100%;
     height: 50px;
     line-height: 50px;
     background: #53B1F2;
@@ -510,6 +521,11 @@ a.banner_offer_card_btn {
 .service_card_body:hover i {
     background: #fff;
     color: #989898;
+}
+
+.serv_card_link {
+    text-decoration: none;
+    color: #19202E
 }
 
 .service_card_body:hover p {
@@ -1128,7 +1144,7 @@ tr td:nth-child(1) input[type=checkbox] {
     position: absolute;
     content: '\f101';
     font-family: var(--web-font-pro);
-    left: -15px;
+    left: -18px;
     top: -2px;
 }
 

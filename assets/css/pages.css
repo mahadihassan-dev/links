@@ -1,9 +1,8 @@
 /* ==== Page Breadcrumb Section : Start ==== */
 
 .breadcrumb_wrapper {
-    background: #302B62;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .breadcrumb_link_item {
@@ -20,7 +19,13 @@
 }
 
 .breadcrumb_link {
-    color: #fff;
+    color: #000;
+}
+
+.brcrumb_active_page {
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 
