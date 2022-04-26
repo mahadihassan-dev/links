@@ -19,6 +19,10 @@
     .header_mobile_logo {
         width: 250px;
     }
+    a.mobile-menu.navbar-brand {
+        margin: 0;
+        width: 70%;
+    }
     /* Header Section Start */
     /* Banner Section Start */
     .banner_col {
@@ -60,7 +64,8 @@
     }
     a.banner_offer_card_btn {
         width: 100%;
-        font-size: 14px;
+        /* font-size: 14px; */
+        font-size: 80%;
         margin-top: 10px;
     }
     .offer_btns {
@@ -176,6 +181,22 @@
     }
     tr.filter_table_data td:nth-child(2) {
         display: none;
+    }
+    .filter_pagination_items .filter_pagination_link {
+        padding: 5px;
+        border-radius: 40px;
+        transition: all linear .3s;
+        font-size: 80%;
+    }
+    .filter_pagination_items:nth-child(1) .filter_pagination_link {
+        padding: 10px 10px;
+        transition: all linear .3s;
+        font-size: 78%;
+    }
+    .filter_pagination_items:nth-child(10) .filter_pagination_link {
+        padding: 10px 10px;
+        transition: all linear .3s;
+        font-size: 78%;
     }
     /* Filter Section End */
     /* Review Section Start */
