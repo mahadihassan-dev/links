@@ -1,0 +1,17 @@
+@keyframes rotateX {
+    0% {
+        transform: rotate(0deg) translateZ(0);
+    }
+    100% {
+        transform: rotate(360deg) translateZ(0);
+    }
+}
+
+@-webkit-keyframes rotateX {
+    0% {
+        -webkit-transform: rotate(0deg) translateZ(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+}

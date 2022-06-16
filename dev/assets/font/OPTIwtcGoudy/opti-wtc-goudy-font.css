@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'OPTIwtcGoudy-Bold';
+    src:url('OPTIwtcGoudy-Bold.ttf.woff') format('woff'),
+        url('OPTIwtcGoudy-Bold.ttf.svg#OPTIwtcGoudy-Bold') format('svg'),
+        url('OPTIwtcGoudy-Bold.ttf.eot'),
+        url('OPTIwtcGoudy-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,96 @@
+<!-- Header Row: Start -->
+            <div class="header_row desktop_version">
+                <!-- Site Logo: Start -->
+                <div class="header_col header_col_left header_logo">
+                    <div class="site_logo">
+                        <a href="#" class="site__logo">
+                            <img src="assets/img/header_logo.png" alt="site logo; site main logo" class="img-fluid _site_logo">
+                            <!-- <span class="site_logo_text">backilnking<span>.</span>biz</span> -->
+                        </a>
+                    </div>
+                </div>
+                <!-- Site Logo: End -->
+                <!-- Site Navigation Menu: Start -->
+                <div class="header_col header_col_right header_nav_menu">
+                    <div class="site_nav">
+                        <!-- bars - for responsive -->
+                        <button type="button" class="nav_bar_mobile">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <!-- .../Header For Desktop and Laptop : Start -->
+                        <ul class="site_menu m-0 p-0">
+                            <li class="site_menu_item_list d-inline-block site_drop_dropdown">
+                                <a href="#" class="site_menu_item_link ">Products <i class="fas fa-caret-down"></i></a>
+                                <ul class="site_drop_dropdown_menu">
+                                    <li class="site_drop_dropdown_item"><a href="#" class="site_drop_dropdown_link">Dropdown Item - 1</a></li>
+                                    <li class="site_drop_dropdown_item"><a href="#" class="site_drop_dropdown_link">Dropdown Item - 1</a></li>
+                                    <li class="site_drop_dropdown_item"><a href="#" class="site_drop_dropdown_link">Dropdown Item - 1</a></li>
+                                    <li class="site_drop_dropdown_item"><a href="#" class="site_drop_dropdown_link">Dropdown Item - 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="site_menu_item_list d-inline-block">
+                                <a href="pages/about-us.html" class="site_menu_item_link">About</a>
+                            </li>
+                            <li class="site_menu_item_list d-inline-block">
+                                <a href="pages/blog.html" class="site_menu_item_link">Blog</a>
+                            </li>
+                            <li class="site_menu_item_list d-inline-block">
+                                <a href="pages/faq.html" class="site_menu_item_link">FAQ</a>
+                            </li>
+                            <li class="site_menu_item_list d-inline-block">
+                                <a href="pages/contact.html" class="site_menu_item_link">Contact</a>
+                            </li>
+                            <li class="site_menu_item_list d-inline-block">
+                                <a href="pages/signup-login.html" class="site_menu_item_link site_menu_btn">Signup/Login</a>
+                            </li>
+                        </ul>
+                        <!-- .../Header For Desktop and Laptop : End -->
+                    </div>
+                </div>
+                <!-- Site Navigation Menu: End -->
+            </div>
+            <!-- Header Row: Start -->
+            <!-- ../Mobile Version Header : Start -->
+            <div class="header_mobile_ver_nav">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="mobile-menu navbar-brand" href="#">
+                            <img src="assets/img/header_logo.png" alt="" class="header_mobile_logo img-fluid">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Disabled</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- ../Mobile Version Header : End -->

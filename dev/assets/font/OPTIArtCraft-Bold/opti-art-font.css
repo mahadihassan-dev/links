@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'OPTIArtCraft-Bold';
+    src:url('OPTIArtCraft-Bold.ttf.woff') format('woff'),
+        url('OPTIArtCraft-Bold.ttf.svg#OPTIArtCraft-Bold') format('svg'),
+        url('OPTIArtCraft-Bold.ttf.eot'),
+        url('OPTIArtCraft-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}

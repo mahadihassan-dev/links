@@ -1,0 +1,44 @@
+/* ==== Page Breadcrumb Section : Start ==== */
+
+.breadcrumb_wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.breadcrumb_link_item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.breadcrumb_link_item:nth-child(1) {
+    margin-left: 0px;
+}
+
+.breadcrumb_link_item:nth-child(3) {
+    margin-right: 0;
+}
+
+.breadcrumb_link {
+    color: #000;
+}
+
+.brcrumb_active_page {
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+/* ==== Page Breadcrumb Section : End ==== */
+
+
+/* ==== About Page : Start ==== */
+
+
+/* ==== About Page : End ==== */
+
+
+/* ==== All Offer Page : Start ==== */
+
+
+/* ==== All Offer Page : End ==== */

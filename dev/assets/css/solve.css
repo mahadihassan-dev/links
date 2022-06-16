@@ -1,0 +1,18 @@
+.service_cards__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+.service_cards__col {
+    width: 9% !important;
+    margin-right: 15px;
+}
+
+.service_cards__col:nth-last-child(1) {
+    margin-right: 0;
+}

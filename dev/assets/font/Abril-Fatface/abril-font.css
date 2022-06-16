@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Abril-Fatface';
+    src:url('Abril-Fatface.ttf.woff') format('woff'),
+        url('Abril-Fatface.ttf.svg#Abril-Fatface') format('svg'),
+        url('Abril-Fatface.ttf.eot'),
+        url('Abril-Fatface.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
